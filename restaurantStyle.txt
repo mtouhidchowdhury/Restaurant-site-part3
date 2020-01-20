@@ -1,0 +1,97 @@
+
+footer{
+	text-align: center;
+}
+
+h1, h2, h3{
+  font-family: 'Quicksand',serif
+}
+
+a:visited { 
+    color: green;
+}
+
+a:hover{
+	font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.contactLink{
+	float: right;
+}
+  body {
+  background-color: #343a40;
+  font-family: 'Quicksand', serif;
+}
+
+.header {
+  color: #D0CDC2;
+}
+
+footer{
+  color: #D0CDC2;
+}
+
+hr {
+  margin: 0px;
+  border-style: dashed;
+  border-color: #FFF123;
+}
+
+
+.item {
+  max-height: 250px;
+}
+
+.imgItem {
+  min-height: 200px;  
+}
+
+/*Filter for images in carousel*/
+.item:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background: rgba(0,0,0,0.5);
+}
+
+/* Responsive CSS for carousel, contact form labels, jumbotron*/
+@media (min-width: 992px) {
+  .item {
+    height: 250px;
+  }
+label{
+  text-align: right;
+}
+}
+
+@media (max-width: 992px) {
+  .item {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .item {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-caption h2, .carousel-caption h3 {
+    font-size: 130%;
+  }
+}
+
+@media (min-width: 576px) {
+  label{
+    text-align: right;
+  }
+}
